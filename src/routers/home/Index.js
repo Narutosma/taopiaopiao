@@ -1,8 +1,10 @@
 import React, {Component} from 'react';
 import "./index.scss"
-import Test from "../../components/Test";
+import Test from "./components/Test";
 // 头部工具栏
-import ToolBar from "../../components/ToolBar"
+import ToolBar from "./components/ToolBar";
+// 轮播图区域
+import Slider from "./components/Slider";
 
 class Index extends Component {
 
@@ -15,6 +17,11 @@ class Index extends Component {
         return (
             <div>
                 <ToolBar city="上海" cityLayer={this.cityLayer} day={18} />
+                <div className="home_slide">
+                    <div className="home_slideWrap">
+                        <Slider />
+                    </div>
+                </div>
                 <h1 className="home">首页</h1>
                 <Test/>
             </div>
