@@ -1,0 +1,62 @@
+$fontColor: #000;
+
+.topBar{
+  display: flex;
+  align-items: center;
+  padding: 4px 15px;
+  color: $fontColor;
+
+  // 城市显示
+  &_city{
+    font-size: 14px;
+    color: #000;
+    &::after{
+      content: "";
+      display: inline-block;
+      margin-left: 6px;
+      top: 10px;
+      border: 4px solid transparent;
+      border-top-color: $fontColor;
+    }
+  }
+
+  // 搜索框
+  &_search{
+    color: #222;
+    border-radius: 14px;
+    background: #f6f5f5;
+    height: 28px;
+    margin: 0 14px;
+    flex: 1;
+    &::placeholder{
+      text-align: center;
+      color: #ccc;
+    }
+  }
+
+  // 图标
+  &_scan,
+  &_today{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+
+    .iconfont{
+      font-size: 22px;
+    }
+  }
+
+  //
+  &_today{
+    position: relative;
+    margin-left: 8px;
+
+    &_day{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      font-size: 12px;
+      transform: translate(-45%, -35%);
+    }
+  }
+}
