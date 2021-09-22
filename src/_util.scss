@@ -1,0 +1,16 @@
+
+//
+$dark: #000;
+$gary: #ccc;
+$while: #fff;
+
+@mixin flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex-v-center{
+  display: flex;
+  align-items: center;
+}

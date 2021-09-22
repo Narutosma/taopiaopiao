@@ -1,0 +1,49 @@
+@import "../util";
+
+.tab-menu{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 48px;
+  background: $while;
+  border-top:1px solid $gary;
+  @include flex-v-center();
+  //display: flex;
+  //align-items: center;
+  //justify-content: space-around;
+
+  &-item{
+    flex: 1;
+    //display: flex;
+    //align-items: center;
+    @include flex-v-center();
+    flex-direction: column;
+    text-decoration: none;
+
+    .iconfont{
+      display: block;
+      width: 21px;
+      height: 21px;
+      font-size: 21px;
+      color: #666;
+    }
+
+    span{
+      margin-top: 6px;
+      font-size: 10px;
+      color: #666;
+    }
+  }
+
+  // 选中样式
+  &-home,
+  &-movie,
+  &-show,
+  &-my{
+    span,
+    .iconfont{
+      color: #fd5c70;
+    }
+  }
+}

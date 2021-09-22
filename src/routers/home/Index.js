@@ -7,6 +7,8 @@ import ToolBar from "./components/ToolBar";
 import Slider from "./components/Slider";
 // 电影列表
 import MovieItem from "./components/MovieItem"
+// 菜单栏
+import TabMenu from "../../components/TabMenu"
 
 class Index extends Component {
 
@@ -33,6 +35,7 @@ class Index extends Component {
                     <MovieItem />
                     <MovieItem />
                 </div>
+                <TabMenu current="home"/>
                 <h1 className="home">首页</h1>
                 <Test/>
             </div>

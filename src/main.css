@@ -1,17 +1,32 @@
 @font-face {
     font-family: "iconfont"; /* Project id 2821200 */
-    src: url('//at.alicdn.com/t/font_2821200_b0b924o6tc6.woff2?t=1631888257456') format('woff2'),
-    url('//at.alicdn.com/t/font_2821200_b0b924o6tc6.woff?t=1631888257456') format('woff'),
-    url('//at.alicdn.com/t/font_2821200_b0b924o6tc6.ttf?t=1631888257456') format('truetype');
+    src: url('//at.alicdn.com/t/font_2821200_g70p1ud6h2q.woff2?t=1632316943765') format('woff2'),
+    url('//at.alicdn.com/t/font_2821200_g70p1ud6h2q.woff?t=1632316943765') format('woff'),
+    url('//at.alicdn.com/t/font_2821200_g70p1ud6h2q.ttf?t=1632316943765') format('truetype');
 }
 
 .iconfont {
     font-family: "iconfont" !important;
     font-size: 16px;
     font-style: normal;
-    vertical-align: middle;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-wode1:before {
+    content: "\e8d2";
+}
+
+.icon-shouye1:before {
+    content: "\e8d3";
+}
+
+.icon-yanchu1:before {
+    content: "\e8d4";
+}
+
+.icon-dianying1:before {
+    content: "\e8d5";
 }
 
 .icon-aixin:before {
