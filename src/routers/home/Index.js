@@ -5,6 +5,8 @@ import Test from "./components/Test";
 import ToolBar from "./components/ToolBar";
 // 轮播图区域
 import Slider from "./components/Slider";
+// 电影列表
+import MovieItem from "./components/MovieItem"
 
 class Index extends Component {
 
@@ -21,6 +23,15 @@ class Index extends Component {
                     <div className="home_slideWrap">
                         <Slider />
                     </div>
+                </div>
+                <div className="home_movie">
+                    <MovieItem />
+                    <MovieItem />
+                    <MovieItem />
+                    <MovieItem />
+                    <MovieItem />
+                    <MovieItem />
+                    <MovieItem />
                 </div>
                 <h1 className="home">首页</h1>
                 <Test/>

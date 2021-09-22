@@ -1,0 +1,81 @@
+
+.movie-item{
+  display: flex;
+  padding: 15px;
+  background: #fff;
+  margin-bottom: 5px;
+  border-radius: 5px;
+
+  // 海报
+  &-cover{
+    width: 65px;
+    height: 95px;
+    border-radius: 5px;
+    margin-right: 11px;
+    background: #222;
+  }
+  // 基本信息
+  &-info{
+    flex: 1;
+  }
+
+  &-name{
+    color: #000;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  &-score{
+    font-size: 10px;
+    color: #333;
+    margin-top: 8px;
+
+    span{
+      font-size: 14px;
+      color: #ffa54b;
+      font-weight: bold;
+    }
+  }
+
+  &-director,
+  &-actor{
+    font-size: 12px;
+    color: #777;
+  }
+
+  &-director{
+    margin-top: 6px;
+  }
+
+  &-actor{
+    margin-top: 4px;
+  }
+
+  &-tag{
+    margin-top: 2px;
+    .tTag{
+      font-size: 10px;
+      color: #ff6e00;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+      padding: 0px 10px;
+    }
+  }
+  // 购买按钮
+  &-buy{
+    display: flex;
+    align-items: center;
+    span{
+      width: 50px;
+      height: 28px;
+      border-radius: 15px;
+      color: #fff;
+      text-align: center;
+      font-size: 12px;
+      line-height: 28px;
+      background-image: linear-gradient(45deg,#ff5456,#ff3d5c);
+      display: block;
+    }
+
+  }
+}
