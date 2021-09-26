@@ -1,5 +1,8 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Home from "./routers/home/Index"
+// 主页
+import Home from "./routers/home/Index";
+// 我的
+import My from "./routers/My"
 
 function NotFound(){
     return <div> 404 not found</div>
@@ -10,6 +13,7 @@ function App() {
         <Router>
             <Switch>
                 <Route path="/" exact component={Home}/>
+                <Route path="/my" exact component={My} />
                 <Route component={NotFound}/>
             </Switch>
         </Router>

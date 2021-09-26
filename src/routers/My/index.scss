@@ -1,0 +1,54 @@
+.my{
+  padding: 15px;
+  background: #f5f5f5;
+
+  &-server{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+
+    li{
+      text-align: center;
+      font-size: 14px;
+      i{
+        display: block;
+        font-size: 28px;
+        margin-bottom: 5px;
+      }
+    }
+  }
+  // 第一列的带有颜色的图标
+  .frist{
+    li{
+      &:nth-of-type(1){
+        i{
+          color: #fd5c70;
+        }
+      }
+
+      &:nth-of-type(2){
+        i{
+          color: #ffa54b;
+        }
+      }
+
+      &:nth-of-type(3){
+        i{
+          color: #8a6df1;
+        }
+      }
+    }
+  }
+
+  &-serverlist{
+    h3{
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0;
+      margin-bottom: 15px;
+      padding-left: 20px;
+    }
+  }
+}
