@@ -1,0 +1,45 @@
+
+.articleInfo{
+
+    .article-list{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        overflow-x: scroll;
+        -webkit-overflow-scrolling: touch;
+
+        &::-webkit-scrollbar{
+            display: none;
+        }
+        li{
+            width: 80px;
+            height: 155px;
+            margin-right: 5px;
+        }
+        a{
+            text-decoration: none;
+
+            .poster{
+                width: 80px;
+                height: 110px;
+                background: #ccc;
+                background-size: cover;
+            }
+            dl{
+                margin: 0;
+                text-align: center;
+                font-size: 16px;
+                color: #222;
+                margin-top: 8px;
+    
+                dd{
+                    margin: 0;
+                    font-size: 12px;
+                    margin-top: 4px;
+                    color: #999;
+                }
+            }
+        }
+    }
+}

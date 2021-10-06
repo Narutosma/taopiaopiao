@@ -1,0 +1,17 @@
+
+.fullText{
+    max-height: 72px;
+    font-size: 14px;
+    line-height: 24px;
+    overflow: hidden;
+    position: relative;
+
+    &-more{
+        position: absolute;
+        right: 5px;
+        bottom: 0;
+        color: #539ae6;
+        padding-left: 25px;
+        background-image: linear-gradient(to right, rgba(255,255,255,0), rgba(255,255,255,1) 50%);
+    }
+}

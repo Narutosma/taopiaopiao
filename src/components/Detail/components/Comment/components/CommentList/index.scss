@@ -1,0 +1,58 @@
+
+.commentList{
+    margin: 20px 0 0 0;
+    padding: 0;
+    list-style: none;
+
+    .comment-item{
+
+        &:nth-of-type(n+2){
+            margin-top: 20px;
+        }
+
+        .comment-user{
+            display: flex;
+            align-items: center;
+            &-avatar{
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                background: #ccc;
+                background-size: cover;
+            }
+
+            &-info{
+                margin-left: 10px;
+                .user-name{
+                    color: #000;
+                    font-size: 14px;
+                }
+
+                .user-score{
+                    margin-top: 3px;
+                    display: flex;
+                    align-items: center;
+                    span{
+                        font-size: 12px;
+                        color: #f2a95b;
+                        font-weight: 500;
+                        margin-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .comment-content{
+        margin-top: 10px;
+    }
+
+    .comment-other{
+        margin-top: 8px;
+        display: flex;
+        justify-content: space-between;
+        color: #bcbcbc;
+        font-size: 12px;
+        align-items: center;
+    }
+}

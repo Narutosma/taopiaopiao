@@ -1,0 +1,42 @@
+
+.scoreWrap{
+    display: flex;
+    align-items: center;
+
+    &-score{
+        width: 110px;
+        text-align: center;
+        .score{
+            font-size: 34px;
+            font-weight: 600;
+        }
+        .score2{
+            font-size: 14px;
+            color: #bebebe;
+        }
+    }
+
+    &-star{
+        flex: 1
+    }
+
+    .star-item{
+        display: flex;
+        align-items: center;
+        .star-bar{
+            flex: 1;
+            margin-left: 5px;
+            height: 3px;
+            background: #ededed;
+        }
+
+        .fill-bar{
+            height: 3px;
+            background: #333;
+        }
+
+        &:nth-child(n + 2){
+            margin-top: 3px;
+        }
+    }
+}

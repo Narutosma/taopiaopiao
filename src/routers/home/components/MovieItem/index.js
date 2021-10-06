@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import PropTypes from "prop-types";
 import "./index.scss";
+import { Link } from "react-router-dom"
 
 class Index extends Component {
     static propTypes = {
@@ -19,7 +20,7 @@ class Index extends Component {
                     <img src={poster} alt=""/>
                 </div>
                 <div className="movie-item-info">
-                    <div className="movie-item-name">{showName}</div>
+                    <Link to="/detail" className="movie-item-name">{showName}</Link>
                     <div className="movie-item-score">淘票票评分 <span>{remark}</span> 99万人评</div>
                     <div className="movie-item-director">导演：{dir}</div>
                     <div className="movie-item-actor">主演：{actor}</div>

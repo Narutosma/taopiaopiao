@@ -1,0 +1,106 @@
+.detail{
+    padding-bottom: 55px;
+    &-header{
+        padding: 18px;
+        background: #cd6e6e;
+    }
+
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        i{
+            font-size: 18px;
+        }
+    }
+
+
+    &-info{
+        display: flex;
+        margin-top: 15px;
+        &-poster{
+            width: 103px;
+            height: 150px;
+            border-radius: 10px;
+            background: #ccc;
+            margin-right: 15px;
+            background-size: cover;
+        }
+
+        &-introduce{
+            flex: 1;
+            padding: 8px 0 ;
+        }
+
+        &-title{
+            font-size: 18px;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        &-other{
+            color: #efd3d3;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+    }
+
+    // 内容区
+    &-content{
+        padding: 18px;
+    }
+
+    &-audience{
+        padding: 20px 0;
+        border-bottom: 1px solid #ededed;
+
+        h3{
+            margin: 0 0 8px 0;
+        }
+
+        &-score{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &-mark{
+            h3{
+                margin: 0;
+                margin-bottom: 5px;
+                font-size: 20px;
+            }
+
+            span{
+                font-size: 12px;
+                color: #999;
+                text-align: right;
+            }
+        }
+    }
+
+    &-idea{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        button{
+            border: none;
+            width: 154px;
+            height: 45px;
+            background: #f5f5f5;
+            border-radius: 5px;
+            color: #999;
+        }
+    }
+}
+
+.buyTicket{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 55px;
+    background-color: #ef8299;
+    text-align: center;
+    line-height: 55px;
+    color: #fff;
+    font-size: 16px;
+}
