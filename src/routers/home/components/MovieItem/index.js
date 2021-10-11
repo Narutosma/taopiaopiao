@@ -28,9 +28,9 @@ class Index extends Component {
                         <span className="tTag">票房榜No.1</span>
                     </div>
                 </div>
-                <div className="movie-item-buy">
+                <Link to="/movie" className="movie-item-buy">
                     <span>购票</span>
-                </div>
+                </Link>
             </div>
         );
     }

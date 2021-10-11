@@ -1,0 +1,109 @@
+
+
+.buy{
+
+    &-top{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 40px;
+        padding: 0 18px;
+        border-bottom: 1px solid #e2e2e2;
+        span{
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        i{
+            font-size: 18px;
+        }
+    }
+
+    &-title{
+        padding: 13px 18px;
+        border-bottom: 1px solid #e2e2e2;
+
+        h3{
+            font-size: 15px;
+            margin: 12px 0;
+        }
+
+        &-time{
+            font-size: 12px;
+            color: #666;
+        }
+    }
+
+    .selectSeat{
+        .seats{
+            padding: 10px 0;
+            height: 24px;
+            background: url("../../assest/seats.svg") 50% 50% / auto 24px no-repeat;
+        }
+
+        .seat-content{
+            background: #f7f7f7;
+            height: 300px;
+
+            .seat-scree{
+                font-size: 14px;
+                height: 28px;
+                line-height: 28px;
+                color: #000;
+                text-align: center;
+                background: url("../../assest/screen.svg") 50% 0 / auto 28px no-repeat;
+            }
+        }
+    }
+
+    &-select{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        .select-ticket{
+            border-top: 1px solid #e2e2e2;
+            padding: 11px 10px;
+            display: flex;
+            // justify-content: space-between;
+
+            .ticket{
+                border: 1px solid #cdcdcd;
+                border-radius: 5px;
+                width: 80px;
+                height: 38px;
+                text-align: center;
+                position: relative;
+                margin-right: 7px;
+
+                .buy-seat{
+                    font-size: 14px;
+                    line-height: 22px;
+                }
+                .buy-price{
+                    font-size: 12px;
+                    color: #83c57b;
+                }
+
+                i{
+                    position: absolute;
+                    right: 3px;
+                    top: 13px;
+                    font-size: 10px;
+                }
+            }
+        }
+
+        .buy-ticket{
+            text-align: center;
+            background: #ee798e;
+            color: #fff;
+            height: 55px;
+            line-height: 55px;
+        }
+    }
+    .seat{
+        margin-top: 20px;
+    }
+}

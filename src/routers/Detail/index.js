@@ -3,6 +3,7 @@ import "./index.scss";
 import FullText from './components/FullText';
 import ArticleList from "./components/Article";
 import Comment from "./components/Comment";
+import { Link } from "react-router-dom";
 export default class Detail extends Component {
 
     state = {
@@ -78,9 +79,9 @@ export default class Detail extends Component {
                         <h3>观众热评</h3>
                         <Comment />
                     </div>
-                    <div className="buyTicket">
+                    <Link to="/seat" className="buyTicket">
                         特惠选座
-                    </div>
+                    </Link>
                 </div>
             </div>
         )

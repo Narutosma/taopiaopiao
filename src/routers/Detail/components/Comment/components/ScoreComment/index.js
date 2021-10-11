@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './index.scss';
-import Star from '../../../../../Star';
+import Star from '../../../../../../components/Star';
 
 export default class ScoreComment extends Component{
 

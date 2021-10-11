@@ -5,6 +5,11 @@ $fontColor: #000;
   align-items: center;
   padding: 4px 15px;
   color: $fontColor;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #fff;
 
   // 城市显示
   &_city{

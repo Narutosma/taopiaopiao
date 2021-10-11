@@ -3,7 +3,10 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./routers/home/Index";
 // 我的
 import My from "./routers/My"
-import Detail from "./components/Detail"
+// 详情页
+import Detail from "./routers/Detail"
+// 购票也
+import Seat from "./routers/Seat"
 
 function NotFound(){
     return <div> 404 not found</div>
@@ -16,6 +19,7 @@ function App() {
                 <Route path="/" exact component={Home}/>
                 <Route path="/my" exact component={My} />
                 <Route path="/detail" exact component={Detail} />
+                <Route pth="/seat" exact component={Seat} />
                 <Route component={NotFound}/>
             </Switch>
         </Router>

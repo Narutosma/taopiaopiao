@@ -3,7 +3,7 @@ import "./index.scss"
 // 头部工具栏
 import ToolBar from "./components/ToolBar";
 // 轮播图区域
-import Slider from "./components/Slider";
+// import Slider from "./components/Slider";
 // 电影列表
 import MovieItem from "./components/MovieItem"
 // 菜单栏
@@ -82,11 +82,11 @@ class Index extends Component {
         return (
             <div>
                 <ToolBar city={this.state.city} cityLayer={this.cityLayer} day={18} />
-                <div className="home_slide">
+                {/* <div className="home_slide">
                     <div className="home_slideWrap">
                         <Slider />
                     </div>
-                </div>
+                </div> */}
                 <div className="home_movie">
                     { movieList }
                 </div>

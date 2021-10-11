@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import "./index.scss";
 import FullText from "../../../FullText"
 import avatar from '../../../../../../assest/avatar.png'
-import Star from '../../../../../Star';
+import Star from '../../../../../../components/Star';
 import PropTypes from "prop-types";
 export default class CommentList extends Component {
 
